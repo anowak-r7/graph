@@ -67,7 +67,9 @@ public class TestGraphUtil {
    }
 
    public TitanGraph openGraph(BackendDataModel backendDataModel) {
-      Configuration config = createTestGraphConfig(backendDataModel);
+      BasicConfiguration config = new BasicConfiguration(GraphDatabaseConfiguration.ROOT_NS,
+         new CommonsConfiguration(TestGraphUtil.loadProperties()),
+         Restriction.NONE);
       TitanGraph graph = TitanFactory.open(config);
       return graph;
    }
