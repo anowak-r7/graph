@@ -1,5 +1,6 @@
 package com.rapid7.graph;
 
+import com.amazonaws.services.dynamodbv2.AbstractAmazonDynamoDB;
 import com.thinkaurelius.titan.core.TitanFactory;
 import com.thinkaurelius.titan.core.TitanGraph;
 import org.apache.commons.configuration.BaseConfiguration;
@@ -19,5 +20,6 @@ public class Connetion
       baseConfiguration.setProperty("storage.hostname", "192.168.1.10");
 
       TitanGraph titanGraph = TitanFactory.open(baseConfiguration);
+
    }
 }
