@@ -4,4 +4,5 @@ package com.rapid7.aces;
  */
 public class LoadAces
 {
+
 }
