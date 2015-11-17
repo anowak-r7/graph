@@ -18,40 +18,71 @@ public class AcesData
 
     public String setId(String id)
     {
-        m_id = id;
+       return  m_id = id;
     }
-    public String getId() {return m_id; }
+    
+    public String getId() 
+    {
+    	return m_id; 
+    }
 
     public String setName(String name)
     {
-        m_name = name;
+        return m_name = name;
     }
-    public String getName() {return m_name; }
+    
+    public String getName() 
+    {
+    	return m_name; 
+    }
 
     public String setVersion(String version)
     {
-        m_version = version;
+        return m_version = version;
     }
-    public String getVersion() {return m_version; }
+    
+    public String getVersion() 
+    {
+    	return m_version; 
+    }
 
     public String setHost(String host)
     {
-        m_host = host;
+        return m_host = host;
     }
-    public String getHost() {return m_host; }
+    
+    public String getHost() 
+    {
+    	return m_host;
+    }
 
     public String setIpAddress(String ipAddress)
     {
-        m_idAddress = ipAddress;
+        return m_idAddress = ipAddress;
     }
-    public String getIpAddress() {return m_idAddress; }
+    
+    public String getIpAddress() 
+    {
+    	return m_idAddress; 
+    }
 
-    public String setPort(String port) { m_port = port; }
-    public String getPort() {return m_port; }
+    public String setPort(String port) 
+    { 
+    	return m_port = port;
+    }
+    
+    public String getPort() 
+    {
+    	return m_port; 
+    }
 
     public String setTimeStamp(String timestamp)
     {
-        m_timestamp = timestamp;
+       return m_timestamp = timestamp;
     }
-    public String getTimeStamp() {return m_timestamp; }
+    
+    public String getTimeStamp() 
+    {
+    	return m_timestamp; 
+    }
 }
