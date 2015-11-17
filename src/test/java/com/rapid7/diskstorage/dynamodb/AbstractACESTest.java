@@ -20,7 +20,6 @@ public abstract class AbstractACESTest
 
 
 
-      graph.getVertex("testing");
      // Vertex results = graph.getVertex("ACES");
       //results.getId();
    }

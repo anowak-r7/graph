@@ -15,6 +15,7 @@ private static String testing = "testing";
    private static String testing3 = "testinginginging";
 
    public static void process(TitanGraph graph) {
+      get(graph, testing, "Testing");
       Vertex comicBookVertex = get(graph, testing, "Testing");
       if (null == comicBookVertex) {
          comicBookVertex = graph.addVertex(null);
@@ -26,10 +27,11 @@ private static String testing = "testing";
          characterVertex.setProperty(testing2, "Testing2");
       }
       characterVertex.addEdge(testing3, comicBookVertex);
+      get(graph, testing, "Testing");
       graph.commit();
    }
 
-   private static Vertex get(TitanGraph graph, String key, String value) {
+   public static Vertex get(TitanGraph graph, String key, String value) {
       Iterator<Vertex> it = graph.getVertices(key, value).iterator();
       Vertex vertex = null;
       if (it.hasNext()) {
