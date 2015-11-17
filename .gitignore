@@ -1,0 +1,23 @@
+/src/.repository/
+/target/
+/deploy/
+/kits/
+# ignore eclipse files
+.settings
+.classpath
+.project
+.checkstyle
+*.jpage
+# ignore dynamically generated versionInfo files
+versionInfo
+.idea
+*.iml
+*.iws
+*.ipr
+
+#Ignore log files
+logs/*
+
+#Ignore eclipse annotation processing settings
+src/nexpose/nsc/.factorypath
+src/nexpose/nse/.factorypath
