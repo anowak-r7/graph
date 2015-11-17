@@ -16,9 +16,9 @@ public class AcesData
     private String m_port;
     private String m_timestamp;
 
-    public String setId(String id)
+    public void setId(String id)
     {
-       return  m_id = id;
+         m_id = id;
     }
     
     public String getId() 
@@ -26,9 +26,9 @@ public class AcesData
     	return m_id; 
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
-        return m_name = name;
+         m_name = name;
     }
     
     public String getName() 
@@ -36,9 +36,9 @@ public class AcesData
     	return m_name; 
     }
 
-    public String setVersion(String version)
+    public void setVersion(String version)
     {
-        return m_version = version;
+         m_version = version;
     }
     
     public String getVersion() 
@@ -46,9 +46,9 @@ public class AcesData
     	return m_version; 
     }
 
-    public String setHost(String host)
+    public void setHost(String host)
     {
-        return m_host = host;
+         m_host = host;
     }
     
     public String getHost() 
@@ -56,9 +56,9 @@ public class AcesData
     	return m_host;
     }
 
-    public String setIpAddress(String ipAddress)
+    public void setIpAddress(String ipAddress)
     {
-        return m_idAddress = ipAddress;
+         m_idAddress = ipAddress;
     }
     
     public String getIpAddress() 
@@ -66,9 +66,9 @@ public class AcesData
     	return m_idAddress; 
     }
 
-    public String setPort(String port) 
+    public void setPort(String port)
     { 
-    	return m_port = port;
+    	 m_port = port;
     }
     
     public String getPort() 
@@ -76,9 +76,9 @@ public class AcesData
     	return m_port; 
     }
 
-    public String setTimeStamp(String timestamp)
+    public void setTimeStamp(String timestamp)
     {
-       return m_timestamp = timestamp;
+        m_timestamp = timestamp;
     }
     
     public String getTimeStamp() 

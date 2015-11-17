@@ -24,23 +24,23 @@ class LoadAces
             Document doc = dBuilder.parse(fXmlFile);
             doc.getDocumentElement().normalize();
 
-            NodeList nList = doc.getElementsByTagName("ace:source");
+            NodeList list = doc.getElementsByTagName("ace:source");
 
-            for (int temp = 0; temp < nList.getLength(); temp++)
+            for (int i = 0; i < list.getLength(); i++)
             {
-                Node nNode = nList.item(temp);
+                Node node = list.item(i);
 
-                if (nNode.getNodeType() == Node.ELEMENT_NODE)
+                if (node.getNodeType() == Node.ELEMENT_NODE)
                 {
-                    Element eElement = (Element) nNode;
+                    Element element = (Element) node;
 
-                    ace.setId(eElement.getElementsByTagName("id").item(0).getTextContent());
-                    ace.setName(eElement.getElementsByTagName("name").item(0).getTextContent());
-                    ace.setVersion(eElement.getElementsByTagName("version").item(0).getTextContent());
-                    ace.setHost(eElement.getElementsByTagName("host").item(0).getTextContent());
-                    ace.setIpAddress(eElement.getElementsByTagName("ip_address").item(0).getTextContent());
-                    ace.setIpAddress(eElement.getElementsByTagName("port").item(0).getTextContent());
-                    ace.setIpAddress(eElement.getElementsByTagName("timestamp").item(0).getTextContent());
+                    ace.setId(element.getElementsByTagName("id").item(0).getTextContent());
+                    ace.setName(element.getElementsByTagName("name").item(0).getTextContent());
+                    ace.setVersion(element.getElementsByTagName("version").item(0).getTextContent());
+                    ace.setHost(element.getElementsByTagName("host").item(0).getTextContent());
+                    ace.setIpAddress(element.getElementsByTagName("ip_address").item(0).getTextContent());
+                    ace.setPort(element.getElementsByTagName("port").item(0).getTextContent());
+                    ace.setTimeStamp(element.getElementsByTagName("timestamp").item(0).getTextContent());
                 }
             }
         }
